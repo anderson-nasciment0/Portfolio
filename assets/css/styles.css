@@ -1,0 +1,419 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  background-color: #323638;
+  z-index: 99;
+}
+
+.links ul,
+li {
+  list-style: none;
+  display: flex;
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  margin-right: 50px;
+  color: #fff;
+}
+
+.links li .contato {
+  border: 2px solid #6f12b3;
+  border-radius: 30px;
+  color: #fff;
+}
+
+.links li .contato:hover {
+  background-color: #fff;
+  border: 1px solid #6f12b3;
+  transition: 1s;
+}
+
+.links li a:hover {
+  color: #6f12b3;
+}
+
+.home-container {
+  background-color: #212529;
+  display: flex;
+  height: 500px;
+}
+.home-container .leftside {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 45px 0 150px 40px;
+}
+
+.leftside h1 {
+  position: absolute;
+  margin-top: 40px;
+  color: #fff;
+  font-size: 35px;
+}
+
+.leftside h2 {
+  margin-top: 80px;
+  color: #a337f5;
+  font-size: 29px;
+}
+
+.leftside p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  line-height: 29px;
+  margin-bottom: 30px;
+}
+
+.leftside a {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #6f12b3;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #111;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.home-container .info .buttons a.light {
+  color: #fff;
+  background-color: #484d50;
+}
+.home-container .info .buttons a:hover {
+  opacity: 0.8;
+}
+.home-container .rightside {
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.img-home {
+  position: relative;
+  animation-name: techBaixo;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes techBaixo {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+.about-me {
+  background-color: #6504ab;
+  height: 400px;
+}
+
+.texts {
+  display: flex;
+  justify-content: center;
+}
+
+.section-title {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  background-color: #212529;
+  border-radius: 0 0 50% 50%;
+  padding: 10px 40px 15px 40px;
+}
+
+.greetings,
+.about,
+.social-icons {
+  color: #fff;
+  text-align: center;
+}
+
+.greetings {
+  margin: 10px 0 12px 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.about {
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 25px;
+}
+
+.social-icons {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.social-icons a {
+  color: #fff;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
+.social-icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+}
+
+.skill {
+  z-index: 99;
+  width: 800px;
+  height: 225px;
+  background-color: #323638;
+  border-radius: 25% 1% 25% 1%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 25px;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, 85%, #0003);
+}
+
+.container .ability img {
+  width: 85px;
+  height: 85px;
+}
+
+.container .ability img {
+  width: 85px;
+  height: 85px;
+}
+
+.projects .projects-title {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 40px;
+  color: #fff;
+  background-color: #212529;
+  font-weight: 300;
+}
+
+.projects .container {
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+}
+
+.slider {
+  flex: 1;
+  overflow: hidden;
+}
+
+.slider--width {
+  height: 100%;
+  display: flex;
+  transition: all ease 0.3s;
+}
+
+.slider--item {
+  background-color: #212529;
+  width: 100vw;
+  height: inherit;
+}
+.slider--controls {
+  padding-left: 5px;
+  position: absolute;
+  width: 98vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 180px;
+}
+
+.slider-control-left,
+.slider-control-right {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-control-left img {
+  width: 50px;
+  height: 50px;
+  transform: scaleX(-1);
+}
+
+.slider-control-right img {
+  width: 50px;
+  height: 50px;
+}
+
+.slider--item .sliders {
+  display: flex;
+  justify-content: center;
+}
+
+.slider--item .slide {
+  width: 280px;
+  height: 380px;
+  min-height: 300px;
+  display: inline-block;
+  background-color: #fff;
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.slide .slidearea {
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #323638;
+  color: #fff;
+  box-shadow: rgb(38, 57, 77) 0px 20px 15px -10px;
+  padding: 30px;
+}
+
+.slider--item .sliders-pointers {
+  margin-top: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-photo img {
+  width: 200px;
+  height: 200px;
+}
+
+.project-name {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.project-description {
+  font-size: 16px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.frameworks {
+  display: flex;
+  margin-top: 20px;
+}
+
+.frameworks a {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid #6f12b3;
+}
+
+.slidearea button {
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: #6f12b3;
+  color: #fff;
+  padding: 10px 10px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.contact {
+  background-color: #212529;
+  height: 150px;
+}
+
+.contact-place {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.wp {
+  display: flex;
+  align-items: center;
+}
+
+.contact-title {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.contact-text {
+  font-size: 20px;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.wp img {
+  width: 60px;
+  height: 60px;
+  transition: 2s;
+}
+
+.wp img:hover {
+  width: 65px;
+  height: 65px;
+}
+
+footer {
+  height: 300px;
+  background-color: #6504ab;
+  text-align: center;
+}
+
+footer .email,
+.credito {
+  color: #fff;
+  margin-top: 5px;
+  font-size: 17px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+}
+
+.social-img img {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+}
